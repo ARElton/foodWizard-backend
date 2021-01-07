@@ -6,6 +6,7 @@ namespace :api do
     get "/recipes/:id", to: "recipes#show"
 
     post "/recipes", to: "recipes#create"
+    post "/recipes/:id", to: "comments#create"
     post "/login", to: "users#login"
   end
 end

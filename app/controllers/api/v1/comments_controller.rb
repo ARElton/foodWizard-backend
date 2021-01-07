@@ -1,8 +1,8 @@
 class Api::V1::CommentsController < ApplicationController
 
     def create 
-        recipe = Recipe.find(params[:recipe_id])
-        comment = recipe.comments.create(comment_params)
+        # recipe = Recipe.find(params[:recipe_id])
+        comment = Comment.create(comment_params)
 
         render json: comment 
     end
