@@ -4,6 +4,7 @@ namespace :api do
   namespace :v1 do
     resources :recipes, only: [:show, :index]
     post "/recipes", to: "recipes#create"
+    post "/recipes/:id", to: "comments#create"
   end
 end
 
